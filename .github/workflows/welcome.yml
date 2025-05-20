@@ -11,3 +11,7 @@ jobs:
   build:
     name: Post welcome comment
     runs-on: ubuntu-latest
+
+    steps:
+      - name: Placeholder step
+        run: echo "This is a placeholder step to make the workflow valid."
