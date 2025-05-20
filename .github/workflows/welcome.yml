@@ -1,20 +1,10 @@
 name: Post welcome comment
-
 on:
   pull_request:
     types: [opened]
-
 permissions:
   pull-requests: write
-
 jobs:
   build:
     name: Post welcome comment
     runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Post welcome comment
-        run: echo "Welcome to the repository! Thank you for your pull request."
